@@ -16,17 +16,38 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 100px 20px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  font-size: 38px;
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top-btn {
+  background: #25D366;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
   max-width: 700px;
   margin: auto;
 }
 
-.subtitle {
+.hero p {
   color: #aaa;
   margin-top: 15px;
 }
@@ -40,22 +61,14 @@ h1 {
   font-weight: bold;
   display: inline-block;
   margin-top: 25px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.mockup {
-  margin-top: 60px;
 }
 
 .mockup img {
   width: 90%;
   max-width: 800px;
   border-radius: 20px;
-  box-shadow: 0 0 40px rgba(0, 150, 255, 0.4);
+  margin-top: 40px;
+  box-shadow: 0 0 40px rgba(0,150,255,0.4);
 }
 
 .section {
@@ -67,26 +80,38 @@ h1 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
   margin-top: 40px;
 }
 
 .card {
   background: #111;
-  padding: 25px;
-  border-radius: 15px;
+  padding: 20px;
+  border-radius: 12px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .price {
-  font-size: 28px;
+  font-size: 24px;
   color: #4facfe;
   font-weight: bold;
+}
+
+.plan {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
 }
 
 .warning {
@@ -103,50 +128,111 @@ footer {
 
 <body>
 
+<!-- TOPO -->
 <header>
-  <h1>Seu restaurante ou barbearia recebendo clientes todos os dias</h1>
-  <p class="subtitle">Sites modernos que fazem seu WhatsApp tocar com pedidos e agendamentos</p>
+  <div class="logo">SeuNegocio Online</div>
+  <a class="top-btn" href="https://wa.me/5541999999999">WhatsApp</a>
+</header>
 
-  <a class="btn" href="https://wa.me/5541999999999">Quero meu site</a>
+<!-- HERO -->
+<section class="hero">
+  <h1>Seu negócio recebendo clientes TODOS OS DIAS pelo WhatsApp</h1>
+  <p>Sites simples que fazem restaurantes e barbearias vender mais</p>
+
+  <a class="btn" href="https://wa.me/5541999999999">Quero receber clientes</a>
 
   <div class="mockup">
     <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df">
   </div>
-</header>
+</section>
 
+<!-- NICHOS -->
+<section class="section">
+  <h2>Sites para diferentes negócios</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Restaurantes</h3>
+      <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
+      <p>Cardápio online + pedidos via WhatsApp</p>
+    </div>
+
+    <div class="card">
+      <h3>Barbearias</h3>
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1">
+      <p>Agendamento simples e rápido</p>
+    </div>
+
+    <div class="card">
+      <h3>Lojas de Veículos</h3>
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+      <p>Catálogo online com contato direto</p>
+    </div>
+
+    <div class="card">
+      <h3>Clínicas</h3>
+      <img src="https://images.unsplash.com/photo-1588776814546-ec7e1b1f93b2">
+      <p>Agendamento e apresentação profissional</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
 <section class="section">
   <h2>O que você vai ter</h2>
 
   <div class="cards">
     <div class="card">
       <h3>Mais clientes</h3>
-      <p>Seu negócio aparecendo online e recebendo pedidos todos os dias</p>
+      <p>Seu negócio vendendo todos os dias</p>
     </div>
 
     <div class="card">
       <h3>WhatsApp integrado</h3>
-      <p>Clientes chamando direto com um clique</p>
+      <p>Contato rápido com seus clientes</p>
     </div>
 
     <div class="card">
       <h3>Visual profissional</h3>
-      <p>Seu negócio com cara de empresa grande</p>
+      <p>Seu negócio com aparência de empresa grande</p>
     </div>
   </div>
 </section>
 
+<!-- PLANOS -->
 <section class="section">
-  <h2>Plano inicial</h2>
-  <p>Site completo + integração com WhatsApp</p>
+  <h2>Planos</h2>
 
-  <p class="price">A partir de R$ 300</p>
+  <div class="cards">
+    <div class="plan">
+      <h3>Básico</h3>
+      <p>Site simples</p>
+      <p class="price">R$ 300</p>
+    </div>
+
+    <div class="plan">
+      <h3>Intermediário</h3>
+      <p>Site + WhatsApp + design melhorado</p>
+      <p class="price">R$ 600</p>
+    </div>
+
+    <div class="plan">
+      <h3>Premium</h3>
+      <p>Site completo + tudo incluso</p>
+      <p class="price">R$ 900</p>
+    </div>
+  </div>
+
   <p class="warning">⚠️ Vagas limitadas esse mês</p>
 
   <a class="btn" href="https://wa.me/5541999999999">Falar agora</a>
 </section>
 
+<!-- FINAL -->
 <section class="section">
-  <h2>Sem site, você perde clientes todos os dias</h2>
+  <h2>Quantos clientes você perdeu hoje por não ter um site?</h2>
   <p>Enquanto você lê isso, seus concorrentes estão recebendo pedidos online.</p>
 </section>
 
@@ -154,6 +240,7 @@ footer {
   © 2026 - Seu Nome
 </footer>
 
+<!-- BOTÃO FLUTUANTE -->
 <a href="https://wa.me/5541999999999"
 style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#000;
 padding:15px;border-radius:50px;font-weight:bold;text-decoration:none;">
