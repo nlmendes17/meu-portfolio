@@ -1,103 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Sites para Negócios Locais</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sites que trazem clientes</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #fff;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    header {
-      text-align: center;
-      padding: 60px 20px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
 
-    h1 {
-      font-size: 32px;
-    }
+header {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+}
 
-    .btn {
-      background: #25D366;
-      color: #000;
-      padding: 12px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 20px;
-    }
+h1 {
+  font-size: 38px;
+}
 
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+p {
+  color: #bbb;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+.btn {
+  background: #25D366;
+  color: #000;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+}
 
-    .card {
-      background: #1c1c1c;
-      padding: 20px;
-      border-radius: 10px;
-    }
+.btn:hover {
+  transform: scale(1.05);
+}
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-      color: #aaa;
-    }
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-    @media(max-width: 700px){
-      .cards {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 26px;
+  color: #25D366;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Sites para Restaurantes e Barbearias</h1>
-  <p>Eu crio sites que trazem clientes para o seu negócio</p>
-  <a class="btn" href="https://wa.me/41987776250">Falar no WhatsApp</a>
+  <h1>Mais clientes todos os dias com um site profissional</h1>
+  <p>Sites para restaurantes e barbearias com integração no WhatsApp</p>
+  <a class="btn" href="https://wa.me/5541999999999">Quero meu site</a>
 </header>
 
 <section class="section">
-  <h2>Portfólio</h2>
+  <h2>Projetos</h2>
 
   <div class="cards">
     <div class="card">
       <h3>Restaurante Bella Massa</h3>
-      <p>Cardápio online + pedidos via WhatsApp</p>
+      <p>Cardápio online e pedidos via WhatsApp</p>
+      <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
     </div>
 
     <div class="card">
       <h3>Barbearia Corte Fino</h3>
-      <p>Agendamento online e página moderna</p>
+      <p>Agendamento fácil e design moderno</p>
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1">
     </div>
   </div>
 </section>
 
 <section class="section">
-  <h2>Serviços</h2>
-  <ul>
-    <li>Criação de sites profissionais</li>
-    <li>Cardápio online</li>
-    <li>Agendamento para barbearias</li>
-    <li>Integração com WhatsApp</li>
-  </ul>
+  <h2>O que dizem</h2>
+  <p>"Depois do site, comecei a receber pedidos todo dia."</p>
+  <p>"Agora meus clientes agendam direto pelo WhatsApp."</p>
+</section>
+
+<section class="section">
+  <h2>Plano inicial</h2>
+  <p>Site completo + integração com WhatsApp</p>
+  <p class="price">A partir de R$ 300</p>
+  <a class="btn" href="https://wa.me/5541999999999">Falar agora</a>
 </section>
 
 <footer>
