@@ -49,7 +49,6 @@ header {
 
 .hero p {
   color: #aaa;
-  margin-top: 15px;
 }
 
 .btn {
@@ -60,7 +59,7 @@ header {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .mockup img {
@@ -68,7 +67,6 @@ header {
   max-width: 800px;
   border-radius: 20px;
   margin-top: 40px;
-  box-shadow: 0 0 40px rgba(0,150,255,0.4);
 }
 
 .section {
@@ -89,6 +87,7 @@ header {
   background: #111;
   padding: 20px;
   border-radius: 12px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -96,10 +95,10 @@ header {
   transform: translateY(-5px);
 }
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 10px;
+.hidden {
+  display: none;
+  margin-top: 15px;
+  color: #bbb;
 }
 
 .price {
@@ -128,17 +127,14 @@ footer {
 
 <body>
 
-<!-- TOPO -->
 <header>
   <div class="logo">SeuNegocio Online</div>
   <a class="top-btn" href="https://wa.me/5541999999999">WhatsApp</a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <h1>Seu negócio recebendo clientes TODOS OS DIAS pelo WhatsApp</h1>
   <p>Sites simples que fazem restaurantes e barbearias vender mais</p>
-
   <a class="btn" href="https://wa.me/5541999999999">Quero receber clientes</a>
 
   <div class="mockup">
@@ -146,83 +142,77 @@ footer {
   </div>
 </section>
 
-<!-- NICHOS -->
-<section class="section">
-  <h2>Sites para diferentes negócios</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Restaurantes</h3>
-      <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
-      <p>Cardápio online + pedidos via WhatsApp</p>
-    </div>
-
-    <div class="card">
-      <h3>Barbearias</h3>
-      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1">
-      <p>Agendamento simples e rápido</p>
-    </div>
-
-    <div class="card">
-      <h3>Lojas de Veículos</h3>
-      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
-      <p>Catálogo online com contato direto</p>
-    </div>
-
-    <div class="card">
-      <h3>Clínicas</h3>
-      <img src="https://images.unsplash.com/photo-1588776814546-ec7e1b1f93b2">
-      <p>Agendamento e apresentação profissional</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- BENEFÍCIOS -->
 <section class="section">
   <h2>O que você vai ter</h2>
 
   <div class="cards">
-    <div class="card">
+
+    <div class="card" onclick="toggle('clientes')">
       <h3>Mais clientes</h3>
       <p>Seu negócio vendendo todos os dias</p>
+      <div id="clientes" class="hidden">
+        ✔️ Mais visibilidade online<br>
+        ✔️ Mais pedidos e contatos<br>
+        ✔️ Presença 24h<br>
+        <span style="color:#4facfe;">+ até 30% mais contatos</span>
+      </div>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="toggle('zap')">
       <h3>WhatsApp integrado</h3>
       <p>Contato rápido com seus clientes</p>
+      <div id="zap" class="hidden">
+        ✔️ Botão direto para conversa<br>
+        ✔️ Mensagem automática pronta<br>
+        ✔️ Cliente chama em 1 clique
+      </div>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="toggle('visual')">
       <h3>Visual profissional</h3>
       <p>Seu negócio com aparência de empresa grande</p>
+      <div id="visual" class="hidden">
+        ✔️ Design moderno<br>
+        ✔️ Layout limpo<br>
+        ✔️ Experiência profissional
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- PLANOS -->
 <section class="section">
   <h2>Planos</h2>
 
   <div class="cards">
+
     <div class="plan">
       <h3>Básico</h3>
-      <p>Site simples</p>
-      <p class="price">R$ 300</p>
+      <p>• Página profissional<br>
+      • Botão WhatsApp<br>
+      • Informações do negócio<br>
+      • Layout moderno</p>
+      <p class="price">A partir de R$ 300</p>
     </div>
 
     <div class="plan">
       <h3>Intermediário</h3>
-      <p>Site + WhatsApp + design melhorado</p>
-      <p class="price">R$ 600</p>
+      <p>• Tudo do básico +<br>
+      • Cardápio ou serviços<br>
+      • WhatsApp avançado<br>
+      • Design mais trabalhado</p>
+      <p class="price">A partir de R$ 600</p>
     </div>
 
     <div class="plan">
       <h3>Premium</h3>
-      <p>Site completo + tudo incluso</p>
-      <p class="price">R$ 900</p>
+      <p>• Tudo do intermediário +<br>
+      • Site completo<br>
+      • Design exclusivo<br>
+      • Estrutura profissional</p>
+      <p class="price">A partir de R$ 900</p>
     </div>
+
   </div>
 
   <p class="warning">⚠️ Vagas limitadas esse mês</p>
@@ -230,7 +220,6 @@ footer {
   <a class="btn" href="https://wa.me/5541999999999">Falar agora</a>
 </section>
 
-<!-- FINAL -->
 <section class="section">
   <h2>Quantos clientes você perdeu hoje por não ter um site?</h2>
   <p>Enquanto você lê isso, seus concorrentes estão recebendo pedidos online.</p>
@@ -240,12 +229,18 @@ footer {
   © 2026 - Seu Nome
 </footer>
 
-<!-- BOTÃO FLUTUANTE -->
 <a href="https://wa.me/5541999999999"
 style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#000;
 padding:15px;border-radius:50px;font-weight:bold;text-decoration:none;">
 💬
 </a>
+
+<script>
+function toggle(id){
+  var el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
 
 </body>
 </html>
