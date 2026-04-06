@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sites que trazem clientes</title>
+<title>NLM Web</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -15,40 +15,43 @@ body {
   color: #fff;
 }
 
+/* TOPO */
 header {
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.top-btn {
-  background: #25D366;
-  color: #000;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
+  font-size: 26px;
   font-weight: bold;
 }
 
+.logo span {
+  color: #4facfe;
+}
+
+.slogan {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* HERO */
 .hero {
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 34px;
   max-width: 700px;
   margin: auto;
 }
 
 .hero p {
   color: #aaa;
+  margin-top: 15px;
 }
 
 .btn {
@@ -59,7 +62,7 @@ header {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .mockup img {
@@ -69,6 +72,7 @@ header {
   margin-top: 40px;
 }
 
+/* SEÇÕES */
 .section {
   padding: 80px 20px;
   max-width: 1100px;
@@ -101,16 +105,17 @@ header {
   color: #bbb;
 }
 
-.price {
-  font-size: 24px;
-  color: #4facfe;
-  font-weight: bold;
-}
-
+/* PLANOS */
 .plan {
   background: #111;
   padding: 25px;
   border-radius: 12px;
+}
+
+.price {
+  font-size: 24px;
+  color: #4facfe;
+  font-weight: bold;
 }
 
 .warning {
@@ -127,14 +132,17 @@ footer {
 
 <body>
 
+<!-- TOPO -->
 <header>
-  <div class="logo">SeuNegocio Online</div>
-  <a class="top-btn" href="https://wa.me/5541999999999">WhatsApp</a>
+  <div class="logo">NLM<span>.web</span></div>
+  <div class="slogan">Sites que trazem clientes todos os dias</div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Seu negócio recebendo clientes TODOS OS DIAS pelo WhatsApp</h1>
   <p>Sites simples que fazem restaurantes e barbearias vender mais</p>
+
   <a class="btn" href="https://wa.me/5541999999999">Quero receber clientes</a>
 
   <div class="mockup">
@@ -142,6 +150,7 @@ footer {
   </div>
 </section>
 
+<!-- BENEFÍCIOS INTERATIVOS -->
 <section class="section">
   <h2>O que você vai ter</h2>
 
@@ -181,6 +190,7 @@ footer {
   </div>
 </section>
 
+<!-- PLANOS -->
 <section class="section">
   <h2>Planos</h2>
 
@@ -220,19 +230,20 @@ footer {
   <a class="btn" href="https://wa.me/5541999999999">Falar agora</a>
 </section>
 
+<!-- FINAL -->
 <section class="section">
   <h2>Quantos clientes você perdeu hoje por não ter um site?</h2>
   <p>Enquanto você lê isso, seus concorrentes estão recebendo pedidos online.</p>
 </section>
 
 <footer>
-  © 2026 - Seu Nome
+  © 2026 - NLM Web
 </footer>
 
+<!-- BOTÃO WHATSAPP REAL -->
 <a href="https://wa.me/5541999999999"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#000;
-padding:15px;border-radius:50px;font-weight:bold;text-decoration:none;">
-💬
+style="position:fixed;bottom:20px;right:20px;">
+  <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" width="60">
 </a>
 
 <script>
